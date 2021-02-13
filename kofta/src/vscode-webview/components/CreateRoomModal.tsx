@@ -33,15 +33,15 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({
             paddingRight: 12,
           }}
           className={tw`text-xl`}
-          placeholder="room name"
+          placeholder="Room name"
           autoFocus
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <div className={tw`flex mt-8 items-center`}>
           <select value={privacy} onChange={(e) => setPrivacy(e.target.value)}>
-            <option value="public">public</option>
-            <option value="private">private</option>
+            <option value="public">Public</option>
+            <option value="private">Private</option>
           </select>
         </div>
         <div className={tw`flex mt-12`}>
